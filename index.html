@@ -1,4 +1,5 @@
 <style>
+/* Custom Properties & Dark Mode */
 :root {
   --bg-card: #ffffff;
   --bg-card-hover: #f6f8fa;
@@ -31,13 +32,7 @@
   }
 }
 
-body {
-  font-family: var(--font-stack);
-  color: var(--text-main);
-  margin: 0;
-  padding: 0;
-}
-
+/* Header Section */
 .portfolio-header {
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--border-card);
@@ -48,7 +43,7 @@ body {
   font-size: 1.75rem;
   font-weight: 600;
   letter-spacing: -0.02em;
-  margin: 0 0 0.5rem 0;
+  margin-bottom: 0.5rem;
 }
 
 .portfolio-header p {
@@ -57,12 +52,14 @@ body {
   margin: 0;
 }
 
+/* Grid Layout */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.25rem;
 }
 
+/* Project Cards */
 .project-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-card);
@@ -94,6 +91,7 @@ body {
   margin-bottom: 1.25rem;
 }
 
+/* Technology Badges */
 .tech-tags {
   display: flex;
   flex-wrap: wrap;
@@ -113,6 +111,7 @@ body {
   white-space: nowrap;
 }
 
+/* Card Links */
 .card-links {
   display: flex;
   gap: 1rem;
@@ -126,6 +125,7 @@ body {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  gap: 0.25rem;
 }
 
 .card-links a:hover {
